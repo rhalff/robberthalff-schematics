@@ -1,0 +1,26 @@
+{
+  "name": "robberthalff-schematics",
+  "version": "1.0.0",
+  "description": "RobbertHalff Angular Schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine **/*_spec.js"
+  },
+  "keywords": [
+    "schematics",
+    "robberthalff"
+  ],
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^0.0.23",
+    "@angular-devkit/schematics": "^0.0.42",
+    "@ngrx/schematics": "github:ngrx/schematics-builds",
+    "@schematics/angular": "^0.1.11",
+    "@types/jasmine": "^2.8.3",
+    "@types/node": "^9.3.0",
+    "jasmine": "^2.8.0",
+    "typescript": "^2.6.2"
+  }
+}

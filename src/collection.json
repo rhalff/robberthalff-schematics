@@ -1,0 +1,90 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "action": {
+      "aliases": [ "a" ],
+      "extends": "@ngrx/schematics:action"
+    },
+    "application": {
+      "extends": "@schematics/angular:application"
+    },
+    "class": {
+      "aliases": [ "cl" ],
+      "extends": "@schematics/angular:class"
+    },
+    "component": {
+      "aliases": [ "c" ],
+      "extends": "@schematics/angular:component"
+    },
+    "container": {
+      "aliases": [ "co" ],
+      "extends": "@ngrx/schematics:container"
+    },
+    "directive": {
+      "aliases": [ "d" ],
+      "extends": "@schematics/angular:directive"
+    },
+    "effect": {
+      "aliases": [ "ef" ],
+      "extends": "@ngrx/schematics:effect"
+    },
+    "entity": {
+      "aliases": [ "en" ],
+      "extends": "@ngrx/schematics:entity"
+    },
+    "enum": {
+      "aliases": [ "e" ],
+      "extends": "@schematics/angular:enum"
+    },
+    "feature": {
+      "aliases": [ "f" ],
+      "extends": "@ngrx/schematics:feature"
+    },
+    "guard": {
+      "extends": "@schematics/angular:guard"
+    },
+    "interface": {
+      "extends": "@schematics/angular:interface"
+    },
+    "module": {
+      "extends": "@schematics/angular:module"
+    },
+    "pipe": {
+      "extends": "@schematics/angular:pipe"
+    },
+    "reducer": {
+      "aliases": [ "r" ],
+      "extends": "@ngrx/schematics:reducer"
+    },
+    "service": {
+      "extends": "@schematics/angular:service"
+    },
+    "store": {
+      "aliases": [ "st" ],
+      "extends": "@ngrx/schematics:store"
+    },
+    "universal": {
+      "extends": "@schematics/angular:universal"
+    },
+    "appShell": {
+      "extends": "@schematics/angular:appShell"
+    },
+    "my-schematic": {
+      "description": "An example schematic",
+      "factory": "./my-schematic/index#mySchematic"
+    },
+    "my-other-schematic": {
+      "description": "A schematic that uses another schematics.",
+      "factory": "./my-other-schematic"
+    },
+    "my-full-schematic": {
+      "description": "A schematic using a source and a schema to validate options.",
+      "factory": "./my-full-schematic",
+      "schema": "./my-full-schematic/schema.json"
+    },
+    "my-extend-schematic": {
+      "description": "A schematic that extends another schematic.",
+      "extends": "my-full-schematic"
+    }
+  }
+}
